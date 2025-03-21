@@ -55,6 +55,8 @@ html {
     --header-logo-link-position: absolute;
     --header-logo-link-top: -1rem;
     --header-logo-link-left: 0;
+    --transition-duration: .3s;
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
 body {
@@ -93,6 +95,9 @@ a:active {
     font-size: var(--button-font-size);
     color: var(--button-color);
     text-decoration: var(--button-text-decoration);
+    transition-duration: var(--transition-duration);
+    transition-property: color, background-color;
+  
 }
 
 .button:hover {
@@ -309,6 +314,7 @@ ul.footer {
     background-color: var(--color-white);
     width: 0;
     height: 0.2rem;
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
   
   .nav .nav-item:hover .nav-link::before {
@@ -316,16 +322,19 @@ ul.footer {
     width: 100%;
 }
 
-.card-work .card-outer {
+.card-work:hover .card-outer {
     position: relative;
     overflow: hidden;
+    transform: scale(0.95);
 }
 
-.card-work .card-image {
+.card-work:hover .card-image {
     height: 30rem;
     width: 100%;
     object-fit: cover;
     vertical-align: bottom;
+    transform: scale(1.2);
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work .card-inner {
@@ -334,10 +343,14 @@ ul.footer {
     left: -0.1rem;
     right: -0.1rem;
     z-index: 1;
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-inner {
     background-color: rgba(0, 0, 0, 0.7);
+}
+.card-work:hover .card-outer {
+    transform: scale(0.95);
 }
 
 .card-work .card-title {
