@@ -36,7 +36,7 @@ html {
     line-height: var(--line-height-base);
   }
   
-  a {
+  a[href] {
     text-decoration: none;
     color: var(--text-color);
   }
