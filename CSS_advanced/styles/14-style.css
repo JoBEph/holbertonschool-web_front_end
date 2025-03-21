@@ -11,8 +11,8 @@
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
-    font-size: 62.5%; /* Ajout de votre style */
-    scroll-behavior: smooth; /* Ajout de votre style */
+    font-size: 62.5%; 
+    scroll-behavior: smooth; 
   }
   
   /* Sections
@@ -24,11 +24,11 @@
   
   body {
     margin: 0;
-    color: var(--text-color); /* Ajout de votre style */
-    font-family: var(--font-family-base); /* Ajout de votre style */
-    font-size: var(--font-size-medium); /* Ajout de votre style */
-    font-weight: var(--font-weight-regular); /* Ajout de votre style */
-    line-height: var(--line-height-base); /* Ajout de votre style */
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular); 
+    line-height: var(--line-height-base);
   }
   
   /**
@@ -82,20 +82,20 @@
   
   a {
     background-color: transparent;
-    text-decoration: none; /* Ajout de votre style */
-    color: var(--text-color); /* Ajout de votre style */
+    text-decoration: none;
+    color: var(--text-color);
   }
   
   a:visited {
-    font-style: italic; /* Ajout de votre style */
+    font-style: italic;
   }
   
   a:hover {
-    text-decoration: underline; /* Ajout de votre style */
+    text-decoration: underline;
   }
   
   a:active {
-    background-color: var(--color-light-grey); /* Ajout de votre style */
+    background-color: var(--color-light-grey);
   }
   
   /**
