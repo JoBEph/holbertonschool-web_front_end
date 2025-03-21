@@ -36,15 +36,14 @@ html {
     line-height: var(--line-height-base);
   }
   
-  a[href]:link {
-    color: var(--text-color);
+  a[href] {
     text-decoration: none;
+    color: var(--text-color);
   }
   
   a[href]:visited {
     font-style: italic;
   }
-  
   
   a[href]:hover {
     text-decoration: underline;
